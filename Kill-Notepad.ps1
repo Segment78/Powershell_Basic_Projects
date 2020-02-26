@@ -13,7 +13,6 @@ Foreach($i in $n){
     	start-process notepad.exe
         $helper = New-Object -ComObject Shell.Application
         $helper.CascadeWindows()
-        #$f = Get-Process | where -Property ProcessName -EQ powershell*
         Write-Host "There's $i notepad(s)"
         }
         sleep -Seconds 1
